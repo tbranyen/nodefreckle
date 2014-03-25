@@ -80,3 +80,25 @@ Getting involved
 ----------------
 
 If you find this project of interest, please document all issues and fork if you feel you can provide a patch.
+
+EDITS by github user @fyaconiello
+----------------
+
+Added search functionality on the entries entity. Added automatic follow pagination to all requests. 
+
+    var freckle = require( 'freckle' );
+
+    // All freckle commands are sent over HTTPS
+
+    // Add your own subdomain and API token information
+    freckle( "XXXXXX", "ZZZZZZZZZZZZZZZZZZZ" );
+
+    // List all PROGRAMMING entries
+    var flags = {'search': {'tags': 'PROGRAMMING'}};
+    freckle.entries.search(flags, function( err, entries ) {
+      if( err ) {
+        console.log( err );
+      }
+
+      console.log( entries );
+    });
