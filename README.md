@@ -70,6 +70,23 @@ API Example Usage
     });
 
 
+####Search Example Usage
+
+see http://madrobby.github.io/freckle-apidocs/entries.html for search argument specification.
+
+    // List all PROGRAMMING entries
+    var args = {'search': {'tags': 'PROGRAMMING'}};
+    freckle.entries.search(args, function( err, entries ) {
+      if( err ) {
+        throw new Error( err );
+      }
+
+      console.log( entries );
+    });
+
+Note: When dealing with the entries API, use the `search` command instead of the `list` command. All pages of entries will be returned at once so the result set can become quite large if you do not use search with proper filters.
+
+
 Release information
 -------------------
 
@@ -80,25 +97,3 @@ Getting involved
 ----------------
 
 If you find this project of interest, please document all issues and fork if you feel you can provide a patch.
-
-EDITS by github user @fyaconiello
-----------------
-
-Added search functionality on the entries entity. Added automatic follow pagination to all requests. 
-
-    var freckle = require( 'freckle' );
-
-    // All freckle commands are sent over HTTPS
-
-    // Add your own subdomain and API token information
-    freckle( "XXXXXX", "ZZZZZZZZZZZZZZZZZZZ" );
-
-    // List all PROGRAMMING entries
-    var flags = {'search': {'tags': 'PROGRAMMING'}};
-    freckle.entries.search(flags, function( err, entries ) {
-      if( err ) {
-        console.log( err );
-      }
-
-      console.log( entries );
-    });
