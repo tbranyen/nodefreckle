@@ -70,6 +70,23 @@ API Example Usage
     });
 
 
+####Search Example Usage
+
+see http://madrobby.github.io/freckle-apidocs/entries.html for search argument specification.
+
+    // List all PROGRAMMING entries
+    var args = {'search': {'tags': 'PROGRAMMING'}};
+    freckle.entries.search(args, function( err, entries ) {
+      if( err ) {
+        throw new Error( err );
+      }
+
+      console.log( entries );
+    });
+
+Note: When dealing with the entries API, use the `search` command instead of the `list` command. All pages of entries will be returned at once so the result set can become quite large if you do not use search with proper filters.
+
+
 Release information
 -------------------
 
