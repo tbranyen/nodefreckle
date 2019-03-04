@@ -32,7 +32,7 @@ API Example Usage
       }
 
       console.log( users );
-    }
+    });
 
     // Show a specific user
     freckle.users.show( 5, function( err, user ) {
