@@ -1,11 +1,13 @@
-Node.js freckle api bindings
-============================
+Node.js Freckle/Noko api bindings
+=================================
 
 Created by Tim Branyen [@tbranyen](http://twitter.com/tbranyen)
 
-These bindings work specifically with the Freckle V1 API.  If you are not currently using Freckle for
-time management, you totally should! It rocks! http://letsfreckle.com, it was created by @madrobby who
+These bindings work specifically with the Noko (formally Freckle) V1 API.  If you are not currently using Noko for
+time management, you totally should! It rocks! https://nokotime.com, it was created by @madrobby who
 has been excellent with his support.
+
+Note: Freckle was renamed to Noko in Q2/2019. Any references to Freckle or Noko are the same.
 
 Installing
 -----------------------

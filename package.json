@@ -1,7 +1,7 @@
 {
   "name": "freckle"
-, "description": "Node.js freckle api bindings"
-, "version": "0.0.1"
+, "description": "Node.js Freckle/Noko api bindings"
+, "version": "0.0.2"
 , "author": "Tim Branyen <tim@tabdeveloper.com> (http://twitter.com/tbranyen)"
 , "main": "./lib/index.js"
 , "directories": {
