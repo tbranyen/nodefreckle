@@ -92,6 +92,9 @@ Note: When dealing with the entries API, use the `search` command instead of the
 Release information
 -------------------
 
+### v0.0.2: ###
+    * Rename to noko
+
 ### v0.0.1: ###
     * Initial potentially complete bindings
 
